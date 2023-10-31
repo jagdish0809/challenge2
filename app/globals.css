@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@200;300;400;500;600&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,11 +19,29 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+background: #F5F5F5 0% 0% no-repeat padding-box;
+}
+
+.logo{
+font-family: 'IBM Plex Serif', serif;
+}
+
+
+.timeline, .timelinecard {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+.timeline::-webkit-scrollbar, .timelinecard::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.artistcol::-webkit-scrollbar
+{
+	width: 8px;
+}
+
+.artistcol::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #cfcfcf;
 }
